@@ -4,6 +4,8 @@ title: Sales Analysis
 permalink: /projects/project1/
 ---
 
+{% raw %}{% include header.html %}{% endraw %}
+
 # Sales Analysis Case Study
 
 ## Business Problem
