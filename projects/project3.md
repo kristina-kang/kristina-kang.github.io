@@ -4,6 +4,8 @@ title: Dashboard Project
 permalink: /projects/project3/
 ---
 
+{% raw %}{% include header.html %}{% endraw %}
+
 # Interactive Dashboard Project
 
 ## Business Problem
