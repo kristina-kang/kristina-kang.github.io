@@ -12,26 +12,102 @@ Turning data into actionable business insights.
 
 ## Projects
 
-<div style="display:flex; flex-wrap: wrap; gap: 20px;">
+<div style="
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap:40px;
+  margin-top:40px;
+">
 
-<div style="flex: 1 1 300px; border: 1px solid #ddd; padding: 20px; border-radius: 10px; background-color: #ffffff; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.05);" onmouseover="this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'; this.style.transform='translateY(-5px)'" onmouseout="this.style.boxShadow='0 2px 5px rgba(0,0,0,0.05)'; this.style.transform='translateY(0)'">
-<h3><a href="projects/project1" style="text-decoration:none; color:#2563eb;">Sales Analysis</a></h3>
-<p>SQL-based revenue performance analysis identifying key trends and business opportunities.</p>
-</div>
+  <!-- Card 1 -->
+  <a href="projects/project1" style="
+    text-decoration:none;
+    color:inherit;
+  ">
+    <div style="
+      padding:30px;
+      border-radius:16px;
+      background:#ffffff;
+      box-shadow:0 10px 30px rgba(0,0,0,0.04);
+      transition: all 0.25s ease;
+    " onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.08)'" 
+       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.04)'">
 
-<div style="flex: 1 1 300px; border: 1px solid #ddd; padding: 20px; border-radius: 10px; background-color: #ffffff; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.05);" onmouseover="this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'; this.style.transform='translateY(-5px)'" onmouseout="this.style.boxShadow='0 2px 5px rgba(0,0,0,0.05)'; this.style.transform='translateY(0)'">
-<h3><a href="projects/project2" style="text-decoration:none; color:#2563eb;">Customer Churn Analysis</a></h3>
-<p>Python and SQL analysis predicting churn risk and providing actionable retention strategies.</p>
-</div>
+      <h3 style="margin-bottom:12px; font-size:20px; color:#111827;">
+        Sales Analysis
+      </h3>
 
-<div style="flex: 1 1 300px; border: 1px solid #ddd; padding: 20px; border-radius: 10px; background-color: #ffffff; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.05);" onmouseover="this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'; this.style.transform='translateY(-5px)'" onmouseout="this.style.boxShadow='0 2px 5px rgba(0,0,0,0.05)'; this.style.transform='translateY(0)'">
-<h3><a href="projects/project3" style="text-decoration:none; color:#2563eb;">Dashboard Project</a></h3>
-<p>Interactive Tableau dashboard tracking KPIs and enabling real-time business decision-making.</p>
-</div>
+      <p style="color:#6b7280; line-height:1.6;">
+        SQL-based revenue performance analysis identifying key trends and business growth opportunities.
+      </p>
 
-<div style="flex: 1 1 300px; border: 1px solid #ddd; padding: 20px; border-radius: 10px; background-color: #ffffff; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.05);" onmouseover="this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'; this.style.transform='translateY(-5px)'" onmouseout="this.style.boxShadow='0 2px 5px rgba(0,0,0,0.05)'; this.style.transform='translateY(0)'">
-<h3><a href="projects/project4" style="text-decoration:none; color:#2563eb;">End-to-End Case Study</a></h3>
-<p>Complete data project from cleaning and analysis to actionable insights for customer segmentation.</p>
-</div>
+    </div>
+  </a>
+
+  <!-- Card 2 -->
+  <a href="projects/project2" style="text-decoration:none; color:inherit;">
+    <div style="
+      padding:30px;
+      border-radius:16px;
+      background:#ffffff;
+      box-shadow:0 10px 30px rgba(0,0,0,0.04);
+      transition: all 0.25s ease;
+    " onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.08)'" 
+       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.04)'">
+
+      <h3 style="margin-bottom:12px; font-size:20px; color:#111827;">
+        Customer Churn Analysis
+      </h3>
+
+      <p style="color:#6b7280; line-height:1.6;">
+        Python and SQL modeling to predict churn risk and recommend actionable retention strategies.
+      </p>
+
+    </div>
+  </a>
+
+  <!-- Card 3 -->
+  <a href="projects/project3" style="text-decoration:none; color:inherit;">
+    <div style="
+      padding:30px;
+      border-radius:16px;
+      background:#ffffff;
+      box-shadow:0 10px 30px rgba(0,0,0,0.04);
+      transition: all 0.25s ease;
+    " onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.08)'" 
+       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.04)'">
+
+      <h3 style="margin-bottom:12px; font-size:20px; color:#111827;">
+        Interactive Dashboard
+      </h3>
+
+      <p style="color:#6b7280; line-height:1.6;">
+        Tableau dashboard tracking KPIs and enabling data-driven executive decision-making.
+      </p>
+
+    </div>
+  </a>
+
+  <!-- Card 4 -->
+  <a href="projects/project4" style="text-decoration:none; color:inherit;">
+    <div style="
+      padding:30px;
+      border-radius:16px;
+      background:#ffffff;
+      box-shadow:0 10px 30px rgba(0,0,0,0.04);
+      transition: all 0.25s ease;
+    " onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.08)'" 
+       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.04)'">
+
+      <h3 style="margin-bottom:12px; font-size:20px; color:#111827;">
+        End-to-End Case Study
+      </h3>
+
+      <p style="color:#6b7280; line-height:1.6;">
+        Full analytics workflow from raw data cleaning to segmentation and strategic recommendations.
+      </p>
+
+    </div>
+  </a>
 
 </div>
