@@ -3,7 +3,7 @@ layout: home
 title: Home
 ---
 
-{% raw %}{% include header.html %}{% endraw %}
+{% include header.html %}
 
 # Kristina Kang  
 **Data Analyst | SQL | Python | Tableau**
