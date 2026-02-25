@@ -4,6 +4,8 @@ title: Customer Churn Analysis
 permalink: /projects/project2/
 ---
 
+{% raw %}{% include header.html %}{% endraw %}
+
 # Customer Churn Analysis
 
 ## Business Problem
