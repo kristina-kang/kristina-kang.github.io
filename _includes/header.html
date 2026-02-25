@@ -1,6 +1,36 @@
 <nav style="background-color:#f8f8f8; padding:15px; text-align:center; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
   <a href="/" style="margin:0 15px; text-decoration:none; color:#2563eb; font-weight:bold;">Home</a>
-  <a href="/projects/project1" style="margin:0 15px; text-decoration:none; color:#2563eb; font-weight:bold;">Projects</a>
+
+  <!-- Projects dropdown -->
+  <span style="position:relative; margin:0 15px; font-weight:bold; color:#2563eb; cursor:pointer;" class="dropdown-toggle">
+    Projects ▼
+    <span style="display:none; position:absolute; background-color:#ffffff; border:1px solid #ddd; border-radius:5px; padding:10px; top:100%; left:50%; transform:translateX(-50%); white-space:nowrap;" class="dropdown">
+      <a href="/projects/project1" style="display:block; margin:5px 0; color:#2563eb; text-decoration:none;">Sales Analysis</a>
+      <a href="/projects/project2" style="display:block; margin:5px 0; color:#2563eb; text-decoration:none;">Customer Churn</a>
+      <a href="/projects/project3" style="display:block; margin:5px 0; color:#2563eb; text-decoration:none;">Dashboard Project</a>
+      <a href="/projects/project4" style="display:block; margin:5px 0; color:#2563eb; text-decoration:none;">End-to-End Case Study</a>
+    </span>
+  </span>
+
   <a href="/resume" style="margin:0 15px; text-decoration:none; color:#2563eb; font-weight:bold;">Resume</a>
   <a href="/contact" style="margin:0 15px; text-decoration:none; color:#2563eb; font-weight:bold;">Contact</a>
 </nav>
+
+<script>
+  const dropdownToggle = document.querySelector('.dropdown-toggle');
+  const dropdownMenu = dropdownToggle.querySelector('.dropdown');
+
+  // Desktop hover
+  dropdownToggle.addEventListener('mouseenter', () => { dropdownMenu.style.display = 'block'; });
+  dropdownToggle.addEventListener('mouseleave', () => { dropdownMenu.style.display = 'none'; });
+
+  // Mobile click toggle
+  dropdownToggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (dropdownMenu.style.display === 'block') {
+      dropdownMenu.style.display = 'none';
+    } else {
+      dropdownMenu.style.display = 'block';
+    }
+  });
+</script>
