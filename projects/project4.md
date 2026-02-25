@@ -4,8 +4,6 @@ title: End-to-End Case Study
 permalink: /projects/project4/
 ---
 
-{% raw %}{% include header.html %}{% endraw %}
-
 # End-to-End Customer Segmentation Project
 
 ## Business Problem
