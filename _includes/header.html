@@ -9,7 +9,7 @@
   align-items:center;
 ">
 
-  <!-- Left: Your Name -->
+  <!-- Left: Name -->
   <div>
     <a href="/" style="
       text-decoration:none;
@@ -31,8 +31,22 @@
 
     <!-- Projects Dropdown -->
     <div style="position:relative;" class="dropdown-wrapper">
-      <span style="cursor:pointer; color:#374151; font-weight:500;">
-        Projects <span style="font-size:12px;">▾</span>
+      <span style="
+        cursor:pointer;
+        color:#374151;
+        font-weight:500;
+        display:flex;
+        align-items:center;
+        gap:6px;
+      ">
+        Projects
+        <span style="
+          font-size:16px;
+          line-height:1;
+          color:#6b7280;
+        ">
+          ▾
+        </span>
       </span>
 
       <div style="
@@ -83,12 +97,17 @@
   const wrapper = document.querySelector('.dropdown-wrapper');
   const menu = wrapper.querySelector('.dropdown-menu');
 
+  let timeout;
+
   wrapper.addEventListener('mouseenter', () => {
+    clearTimeout(timeout);
     menu.style.display = 'block';
   });
 
   wrapper.addEventListener('mouseleave', () => {
-    menu.style.display = 'none';
+    timeout = setTimeout(() => {
+      menu.style.display = 'none';
+    }, 180); // delay prevents flicker
   });
 
   wrapper.addEventListener('click', (e) => {
