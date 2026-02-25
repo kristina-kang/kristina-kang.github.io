@@ -3,8 +3,6 @@ layout: home
 title: Home
 ---
 
-{% include header.html %}
-
 # Kristina Kang  
 **Data Analyst | SQL | Python | Tableau**
 
