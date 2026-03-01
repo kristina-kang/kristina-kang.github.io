@@ -1,93 +1,147 @@
 ---
 ---
 
-/* ===== RESET ===== */
+/* =========================
+   RESET
+========================= */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* ===== BODY ===== */
+/* =========================
+   BASE
+========================= */
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background: #f9fafb;
   color: #111827;
   line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* ===== CONTAINER ===== */
+/* =========================
+   GLOBAL CONTAINER
+========================= */
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 100px 24px;
+  padding: 80px 24px;
 }
 
-/* ===== HERO SECTION ===== */
+/* =========================
+   HERO SECTION
+========================= */
 .hero {
-  padding: 120px 24px;
+  padding: 120px 0;
   background: linear-gradient(180deg, #ffffff 0%, #f3f4f6 100%);
 }
 
 .hero-content {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 24px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 60px;
   flex-wrap: wrap;
 }
 
 .hero-text {
   flex: 1;
+  min-width: 280px;
 }
 
 .hero-text h1 {
   font-size: 48px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
 }
 
 .hero-text p {
   font-size: 18px;
   color: #4b5563;
   max-width: 600px;
+  margin-top: 16px;
 }
 
+/* Profile Image */
 .hero-image {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background: #e5e7eb;
   overflow: hidden;
+  background: #e5e7eb;
+  flex-shrink: 0;
 }
 
-/* ===== SECTION DIVIDER ===== */
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========================
+   SECTION DIVIDER
+========================= */
 .section-divider {
   height: 1px;
   background: #e5e7eb;
   margin: 80px 0;
 }
 
-/* ===== HEADINGS ===== */
+/* =========================
+   HEADINGS
+========================= */
 h2 {
   font-size: 28px;
   margin-bottom: 32px;
+  letter-spacing: -0.3px;
 }
 
-/* ===== PROJECT GRID ===== */
+/* =========================
+   PROJECT GRID
+========================= */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 32px;
 }
 
-/* ===== CARD ===== */
+/* Remove ugly link styling inside cards */
+.projects-grid a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.projects-grid a:visited {
+  color: inherit;
+}
+
+.projects-grid a:hover {
+  text-decoration: none;
+}
+
+/* =========================
+   CARD
+========================= */
 .card {
   background: #ffffff;
   padding: 32px;
   border-radius: 14px;
   border: 1px solid #f0f0f0;
   transition: all 0.25s ease;
+  height: 100%;
+}
+
+.card h3 {
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #4b5563;
 }
 
 .card:hover {
@@ -95,14 +149,16 @@ h2 {
   box-shadow: 0 18px 40px rgba(0,0,0,0.06);
 }
 
-/* ===== IMPACT TEXT ===== */
+/* Impact text emphasis */
 .impact {
   font-weight: 600;
   color: #111827;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
-/* ===== SKILLS SECTION ===== */
+/* =========================
+   SKILLS
+========================= */
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -116,4 +172,10 @@ h2 {
   padding: 8px 14px;
   border-radius: 999px;
   font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.skill-pill:hover {
+  background: #e0e7ff;
 }
