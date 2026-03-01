@@ -1,3 +1,4 @@
 title: Kristina Kang
 description: Data Analyst Portfolio
-theme: minima
+markdown: kramdown
+permalink: pretty
