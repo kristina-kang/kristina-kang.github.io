@@ -6,7 +6,9 @@ title: Home
 # Kristina Kang  
 **Data Analyst | SQL | Python | Tableau**
 
-Turning data into actionable business insights that drive strategic decisions.
+<p style="margin-top:20px; max-width:700px;">
+I specialize in translating complex datasets into actionable insights through statistical modeling, SQL analysis, and executive-level visualization.
+</p>
 
 ---
 
