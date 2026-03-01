@@ -10,9 +10,13 @@
 
   {% include header.html %}
 
-  <main class="container">
+  {% if page.title == "Home" %}
     {{ content }}
-  </main>
+  {% else %}
+    <div class="container">
+      {{ content }}
+    </div>
+  {% endif %}
 
 </body>
 </html>
