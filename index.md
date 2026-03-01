@@ -26,7 +26,7 @@ title: Home
 
 <div class="container">
 
-## Selected Work
+<h2>Selected Work</h2>
 
 <div class="projects-grid">
 
@@ -66,7 +66,7 @@ title: Home
 
 <div class="section-divider"></div>
 
-## Technical Skills
+<h2>Technical Skills</h2>
 
 <div class="skills">
   <span class="skill-pill">SQL</span>
