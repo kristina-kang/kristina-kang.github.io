@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Customer Churn Analysis
 permalink: /projects/project2/
 ---
