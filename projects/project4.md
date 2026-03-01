@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: End-to-End Case Study
 permalink: /projects/project4/
 ---
