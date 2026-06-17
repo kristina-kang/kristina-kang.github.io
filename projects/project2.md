@@ -41,4 +41,4 @@ Customer churn was increasing in mid-tier subscription plans, impacting recurrin
 
 ---
 
-[← Back to Home](/)
+<a href="/" class="back-button">← Back to Home</a>
