@@ -45,6 +45,14 @@ title: Home
   </div>
 </a>
 
+<a href="/projects/project3">
+  <div class="card">
+    <h3>Statistical Inference in R</h3>
+    <p>Applied confidence intervals and hypothesis testing to analyze behavioral survey data.</p>
+    <p class="impact">Impact: Used statistical inference to draw population-level conclusions from sample data.</p>
+  </div>
+</a>
+
 </div>
 
 <div class="section-divider"></div>
