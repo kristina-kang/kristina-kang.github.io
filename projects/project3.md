@@ -28,4 +28,4 @@ Tableau, SQL
 ## Recommendation
 Focus marketing and sales support on underperforming regions and products.
 
-[← Back to Home](/)
+<a href="/" class="back-button">← Back to Home</a>
