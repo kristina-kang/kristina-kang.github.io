@@ -39,9 +39,9 @@ title: Home
 
 <a href="/projects/project2">
   <div class="card">
-    <h3>Customer Churn Modeling</h3>
-    <p>Built predictive churn model using Python and logistic regression.</p>
-    <p class="impact">Impact: Identified high-risk customers 3x more likely to churn.</p>
+    <h3>Smart Fitness Tracker Usage Analysis</h3>
+    <p>Analyzed smart device usage patterns using SQL and Tableau to uncover consumer activity trends.</p>
+    <p class="impact">Impact: Identified user behavior insights to support product and marketing strategy.</p>
   </div>
 </a>
 
