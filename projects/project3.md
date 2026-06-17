@@ -1,31 +1,145 @@
 ---
 layout: default
-title: Dashboard Project
+title: Statistical Inference and Behavioral Data Analysis in R
 permalink: /projects/project3/
 ---
 
-# Interactive Dashboard Project
+# Statistical Inference and Behavioral Data Analysis in R
 
-## Business Problem
-The company needed a dashboard to track monthly sales performance and KPIs in real-time.
+## Project Overview
 
-## Data
-- 50,000 sales transactions
-- Product, region, and salesperson data
+This project applies statistical inference techniques in R to investigate behavioral and psychological characteristics among university students.
 
-## Tools Used
-Tableau, SQL
+Using survey-based data, two independent analyses were conducted:
 
-## Analysis / Dashboard Features
-- Visualized revenue by region and product
-- Identified top-performing products and regions
-- Built interactive filters for month, region, and product line
+- Student motivation analysis
+- Personality trait prevalence analysis
 
-## Key Insights
-- North region consistently outperformed South region by 20%
-- Product B was top contributor to revenue, but underperforming in Q3
+The objective was to demonstrate how statistical methods can be used to draw conclusions about larger populations using sample data.
 
-## Recommendation
-Focus marketing and sales support on underperforming regions and products.
+**Tools:** R, Statistical Inference, Hypothesis Testing
+
+---
+
+## Research Objective
+
+Survey data was analyzed to answer two research questions:
+
+1. What proportion of Science and Technology students are primarily intrinsically motivated?
+
+2. Is the prevalence of psychopathic personality traits among university students significantly higher than the reported prevalence in the general adult population?
+
+Both analyses relied on statistical inference techniques to estimate population parameters and evaluate hypotheses.
+
+---
+
+## Analysis 1: Student Motivation
+
+### Research Question
+
+What proportion of Science and Technology students are intrinsically motivated?
+
+### Methodology
+
+Students were classified as intrinsically motivated when their intrinsic motivation score exceeded their extrinsic motivation score.
+
+A confidence interval for a population proportion was constructed using sample data.
+
+### Results
+
+- Sample proportion: 60%
+- Confidence level: 98%
+- Confidence interval: 48.1% – 70.8%
+
+### Key Insight
+
+The analysis suggests that a majority of Science and Technology students are intrinsically motivated.
+
+While sampling variability exists, the estimated interval indicates that intrinsic motivation is likely common within the broader student population.
+
+---
+
+## Analysis 2: Personality Trait Prevalence
+
+### Research Question
+
+Is the prevalence of psychopathic personality traits among university students higher than the rate reported in the general adult population?
+
+### Methodology
+
+A one-sample proportion hypothesis test was conducted.
+
+Hypotheses:
+
+**H₀:** p = 0.045
+
+**Hₐ:** p > 0.045
+
+The observed sample proportion was compared against the reported population benchmark of 4.5%.
+
+### Results
+
+- Sample proportion: 9.23%
+- Population benchmark: 4.5%
+- z-statistic: 4.51
+- p-value: 3.29 × 10⁻⁶
+
+### Key Insight
+
+The prevalence of psychopathic personality traits observed in the student sample was significantly higher than the reported prevalence in the general population.
+
+The extremely small p-value provides strong statistical evidence against the null hypothesis.
+
+---
+
+## Skills Demonstrated
+
+Throughout this project, the following analytical skills were applied:
+
+- Statistical Inference
+- Confidence Interval Estimation
+- Hypothesis Testing
+- Population Proportion Analysis
+- Research Design
+- Data Interpretation
+- R Programming
+- Data Visualization
+
+---
+
+## Sample R Code
+
+The analysis was performed in R using statistical functions for confidence interval estimation and hypothesis testing.
+
+```r
+# Confidence interval for population proportion
+
+prop.test(
+  x = pos,
+  n = nrow(stonly),
+  conf.level = 0.98,
+  correct = FALSE
+)
+
+# One-sample proportion test
+
+prop.test(
+  x = psychopathy_count,
+  n = sample_size,
+  p = 0.045,
+  alternative = "greater",
+  correct = FALSE
+)
+```
+
+Complete R code and analysis documentation are available on GitHub.
+
+<!-- Replace with your actual GitHub link --> <a href="https://github.com/kristina-kang" target="_blank"> View Full Analysis on GitHub → </a>
+
+###Conclusion
+
+This project demonstrates how statistical inference can be used to draw meaningful conclusions from sample data and support evidence-based decision making.
+
+By applying confidence interval estimation and hypothesis testing in R, the analysis transformed survey responses into interpretable insights about student motivation and behavioral characteristics.
 
 <a href="/" class="back-button">← Back to Home</a>
