@@ -231,8 +231,6 @@ By analyzing consumer behavior patterns, organizations can make data-driven deci
 
 ---
 
-<div style="margin-top:50px;">
-
 <a href="/" class="back-button">← Back to Home</a>
 
 </div>
