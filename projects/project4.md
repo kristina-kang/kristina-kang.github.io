@@ -44,4 +44,4 @@ Python (Pandas, Scikit-learn, Matplotlib), SQL, Tableau
 - Personalize offers for Segment A to maintain loyalty  
 - Use Segment B insights to time promotions around seasonal peaks  
 
-[← Back to Home](/)
+<a href="/" class="back-button">← Back to Home</a>
