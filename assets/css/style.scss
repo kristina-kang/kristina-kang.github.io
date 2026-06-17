@@ -230,3 +230,21 @@ h2 {
 .project-content a:hover {
   text-decoration: underline;
 }
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 56px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
