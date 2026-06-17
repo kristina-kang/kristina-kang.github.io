@@ -10,7 +10,7 @@ permalink: /projects/project2/
 
 Bellabeat is a wellness technology company focused on smart health devices.
 
-This project analyzes smart device usage data to understand consumer activity patterns and identify opportunities for improving product strategy, user engagement, and marketing decisions.
+This project analyzes smart device usage data to understand consumer behavior patterns and identify opportunities for improving product strategy, user engagement, and marketing decisions.
 
 The analysis follows the six-step data analysis process:
 
@@ -24,11 +24,11 @@ The analysis follows the six-step data analysis process:
 
 Bellabeat aims to expand its presence in the global smart device market.
 
-The goal of this analysis was to understand how consumers use non-Bellabeat fitness devices and uncover behavioral patterns that could help inform:
+The objective of this analysis was to understand how consumers use fitness tracking devices and uncover behavioral insights that could support:
 
 - Product development
-- Marketing strategies
-- User engagement initiatives
+- Marketing strategy
+- Customer engagement
 
 ---
 
@@ -45,27 +45,27 @@ The dataset contains smart device usage data from 30 Fitbit users, including:
 - Sleep patterns
 - Activity intensity
 
-The data includes minute-level and daily-level tracking information collected over approximately one month.
+The dataset includes minute-level and daily-level tracking data collected over approximately one month.
 
 ---
 
 ## Data Preparation
 
-Before analysis, the dataset was cleaned and prepared using SQL.
+The dataset was cleaned and prepared using SQL.
 
-Performed:
+Key preparation steps:
 
 - Checked for missing values
-- Validated duplicate records
-- Reviewed dataset time ranges
+- Verified duplicate records
+- Validated dataset time ranges
 - Combined multiple activity tables
 - Created analysis-ready datasets
 
-Example transformations included:
+Additional transformations:
 
-- Adding day-of-week attributes
-- Rounding numerical values for consistency
-- Creating time-of-day categories:
+- Added day-of-week attributes
+- Standardized numerical values
+- Created time-of-day categories:
   - Morning
   - Afternoon
   - Evening
@@ -75,52 +75,50 @@ Example transformations included:
 
 ## Data Analysis
 
-SQL was used to aggregate and analyze activity patterns across multiple datasets.
+SQL was used to aggregate and analyze smart device usage patterns.
 
-Analyzed relationships between:
+The analysis explored relationships between:
 
 - Activity intensity and calories burned
-- Steps and user engagement
-- Time of day and activity levels
-- Sleep and wellness behaviors
+- Steps and user activity levels
+- Time of day and workout behavior
+- Sleep and wellness patterns
 
 ---
 
 ## Key Findings
 
-### Users showed different activity patterns throughout the day
+### Activity patterns vary throughout the day
 
-Activity levels changed significantly depending on the time of day, suggesting opportunities for personalized engagement strategies.
+Users demonstrated different activity behaviors depending on the time of day, suggesting opportunities for personalized engagement.
 
-### Higher intensity activity was associated with increased calorie expenditure
+### Higher intensity activity was linked to increased calorie expenditure
 
-Movement and intensity metrics provided insights into how users interact with their fitness devices.
+Activity intensity metrics provided insights into how users interact with fitness tracking devices.
 
-### Smart device data can support personalized wellness experiences
+### Smart device data can enable personalized wellness experiences
 
-Usage patterns highlight opportunities for features such as:
+Consumer behavior patterns can support:
 
 - Personalized activity recommendations
-- Engagement notifications
-- Wellness-focused marketing campaigns
+- Engagement reminders
+- Targeted wellness campaigns
 
 ---
 
 ## Business Recommendations
 
-Based on the analysis:
+### 1. Create personalized user experiences
 
-### 1. Develop personalized user experiences
+Bellabeat can leverage activity patterns to provide customized wellness recommendations.
 
-Bellabeat could use activity patterns to create tailored recommendations based on individual behavior.
+### 2. Increase user engagement
 
-### 2. Improve user engagement
+Personalized reminders and insights can encourage consistent device usage.
 
-Smart reminders and personalized insights could encourage consistent device usage.
+### 3. Improve marketing strategies
 
-### 3. Create targeted marketing strategies
-
-Understanding consumer behavior can help Bellabeat better position products for different user segments.
+Understanding consumer behavior can help Bellabeat better target different user segments.
 
 ---
 
@@ -130,49 +128,33 @@ An interactive Tableau dashboard was created to visualize:
 
 - Daily activity trends
 - Steps and calories
-- Intensity patterns
+- Activity intensity
 - Consumer usage behavior
 
 
 <div class="tableau-container">
 
-<div class='tableauPlaceholder' id='viz1781670878993' style='position: relative'>
+<div class='tableauPlaceholder' id='viz1781670878993'>
 
 <noscript>
 <a href='#'>
-<img alt='Home_board' 
-src='https://public.tableau.com/static/images/be/bellabeat_17090733211060/Home_board/1_rss.png' 
-style='border: none' />
+<img alt='Bellabeat Dashboard'
+src='https://public.tableau.com/static/images/be/bellabeat_17090733211060/Home_board/1_rss.png'
+style='border:none'/>
 </a>
 </noscript>
 
-<object class='tableauViz' style='display:none;'>
+<object class='tableauViz'>
 
-<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'/>
 
-<param name='embed_code_version' value='3' />
+<param name='embed_code_version' value='3'/>
 
-<param name='site_root' value='' />
+<param name='name' value='bellabeat_17090733211060/Home_board'/>
 
-<param name='name' value='bellabeat_17090733211060/Home_board' />
+<param name='tabs' value='no'/>
 
-<param name='tabs' value='no' />
-
-<param name='toolbar' value='yes' />
-
-<param name='static_image' value='https://public.tableau.com/static/images/be/bellabeat_17090733211060/Home_board/1.png' />
-
-<param name='animate_transition' value='yes' />
-
-<param name='display_static_image' value='yes' />
-
-<param name='display_spinner' value='yes' />
-
-<param name='display_overlay' value='yes' />
-
-<param name='display_count' value='yes' />
-
-<param name='language' value='en-US' />
+<param name='toolbar' value='yes'/>
 
 </object>
 
@@ -186,27 +168,12 @@ var divElement = document.getElementById('viz1781670878993');
 var vizElement = divElement.getElementsByTagName('object')[0];
 
 if (divElement.offsetWidth > 800) {
-
-vizElement.style.width='900px';
-
-vizElement.style.height='700px';
-
+    vizElement.style.width='900px';
+    vizElement.style.height='700px';
 } 
-
-else if (divElement.offsetWidth > 500) {
-
-vizElement.style.width='900px';
-
-vizElement.style.height='700px';
-
-} 
-
 else {
-
-vizElement.style.width='100%';
-
-vizElement.style.height='900px';
-
+    vizElement.style.width='100%';
+    vizElement.style.height='700px';
 }
 
 var scriptElement = document.createElement('script');
@@ -217,17 +184,14 @@ vizElement.parentNode.insertBefore(scriptElement, vizElement);
 
 </script>
 
-
 </div>
 
 
----
-
 ## Conclusion
 
-This project demonstrates how SQL and Tableau can transform raw smart device data into actionable insights.
+This project demonstrates how SQL and Tableau can transform raw smart device data into actionable business insights.
 
-By analyzing consumer behavior patterns, organizations can make data-driven decisions that improve product strategy, marketing effectiveness, and customer engagement.
+By analyzing consumer behavior patterns, companies can make data-driven decisions that improve product strategy, marketing effectiveness, and customer engagement.
 
 ---
 
