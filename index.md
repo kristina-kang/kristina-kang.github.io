@@ -31,9 +31,9 @@ title: Home
 
 <a href="/projects/project1">
   <div class="card">
-    <h3>Sales Performance Analysis</h3>
-    <p>Identified revenue decline drivers using SQL trend analysis.</p>
-    <p class="impact">Impact: Uncovered 12% quarterly drop and retention opportunity.</p>
+    <h3>Cyclistic Bike Share Analysis</h3>
+    <p>Analyzed rider behavior differences between casual riders and annual members using SQL and Tableau.</p>
+    <p class="impact">Impact: Identified usage patterns and provided strategies to increase membership conversion.</p>
   </div>
 </a>
 
