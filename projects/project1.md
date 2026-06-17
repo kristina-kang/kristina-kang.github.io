@@ -19,4 +19,4 @@ SQL, Excel
 ## Recommendation
 Launch targeted retention campaign.
 
-[← Back to Home](/)
+<a href="/" class="back-button">← Back to Home</a>
