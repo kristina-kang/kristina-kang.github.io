@@ -17,8 +17,7 @@ title: Home
     </div>
 
     <div class="hero-image">
-      <!-- Replace with your actual headshot -->
-      <img src="/assets/headshot.jpg" alt="Kristina Kang" style="width:100%; height:100%; object-fit:cover;">
+      <img src="{{ '/assets/images/profile.png' | relative_url }}" alt="Kristina Kang">
     </div>
 
   </div>
