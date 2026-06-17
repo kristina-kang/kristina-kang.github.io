@@ -191,3 +191,42 @@ h2 {
 .skill-pill:hover {
   background: #e0e7ff;
 }
+
+/* =========================
+   PROJECT PAGES
+========================= */
+
+.project-content h1 {
+  font-size: 42px;
+  margin-bottom: 32px;
+  line-height: 1.2;
+}
+
+.project-content h2 {
+  font-size: 28px;
+  margin-top: 48px;
+  margin-bottom: 12px;
+  letter-spacing: -0.3px;
+}
+
+.project-content p {
+  margin-bottom: 20px;
+}
+
+.project-content ul {
+  margin-bottom: 20px;
+  padding-left: 24px;
+}
+
+.project-content li {
+  margin-bottom: 8px;
+}
+
+.project-content a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.project-content a:hover {
+  text-decoration: underline;
+}
