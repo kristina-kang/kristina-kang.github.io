@@ -23,11 +23,15 @@ The objective was to demonstrate how statistical methods can be used to draw con
 
 ## Research Objective
 
-Survey data was analyzed to answer two research questions:
+The analysis focused on two research questions:
 
-1. What proportion of Science and Technology students are primarily intrinsically motivated?
+### Motivation Analysis
 
-2. Is the prevalence of psychopathic personality traits among university students significantly higher than the reported prevalence in the general adult population?
+What proportion of Science and Technology students are intrinsically motivated?
+
+### Personality Trait Analysis
+
+Is the prevalence of psychopathic personality traits among university students higher than the reported prevalence in the general adult population?
 
 Both analyses relied on statistical inference techniques to estimate population parameters and evaluate hypotheses.
 
