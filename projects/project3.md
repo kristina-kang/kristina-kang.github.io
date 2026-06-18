@@ -140,7 +140,9 @@ Complete R code and analysis documentation are available on GitHub.
 
 <!-- Replace with your actual GitHub link --> <a href="https://github.com/kristina-kang" target="_blank"> View Full Analysis on GitHub → </a>
 
-###Conclusion
+---
+
+## Conclusion
 
 This project demonstrates how statistical inference can be used to draw meaningful conclusions from sample data and support evidence-based decision making.
 
