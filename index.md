@@ -94,15 +94,13 @@ title: Home
         <h3>Cyclistic Bike Share Analysis</h3>
 
         <p>
-          Analyzed rider behavior differences between casual
-          riders and annual members using SQL and Tableau.
+          Analyzed differences in usage patterns between annual members and casual riders using SQL and Tableau, exploring ride duration, frequency, and seasonal trends.
         </p>
 
         <div class="impact">
-          <span>KEY IMPACT</span>
+          <span>KEY TAKEAWAY</span>
           <p>
-            Identified usage patterns and provided strategies
-            to increase membership conversion.
+            Identified distinct riding behaviors across customer segments and developed data-driven recommendations to support membership conversion.
           </p>
         </div>
 
@@ -126,18 +124,16 @@ title: Home
           <span class="project-category">PRODUCT ANALYTICS</span>
         </div>
 
-        <h3>Smart Fitness Tracker Usage Analysis</h3>
+        <h3>Bellabeat Smart Device Usage Analysis</h3>
 
         <p>
-          Analyzed smart device usage patterns using SQL
-          and Tableau to uncover consumer activity trends.
+          Explored Fitbit activity and wellness data using SQL and Tableau to identify patterns in daily activity, exercise intensity, and user engagement.
         </p>
 
         <div class="impact">
-          <span>KEY IMPACT</span>
+          <span>KEY TAKEAWAY</span>
           <p>
-            Identified user behavior insights to support
-            product and marketing strategy.
+            Uncovered behavioral patterns that can inform personalized wellness experiences, customer engagement initiatives, and product marketing strategies.
           </p>
         </div>
 
@@ -161,18 +157,16 @@ title: Home
           <span class="project-category">STATISTICAL ANALYSIS</span>
         </div>
 
-        <h3>Statistical Inference in R</h3>
+        <h3>Statistical Inference & Behavioral Data Analysis</h3>
 
         <p>
-          Applied confidence intervals and hypothesis
-          testing to analyze behavioral survey data.
+          Applied statistical inference techniques in R to examine student motivation and behavioral characteristics using survey-based data.
         </p>
 
         <div class="impact">
-          <span>KEY IMPACT</span>
+          <span>KEY TAKEAWAY</span>
           <p>
-            Used statistical inference to draw
-            population-level conclusions from sample data.
+            Used confidence intervals and hypothesis testing to evaluate research questions and draw evidence-based conclusions from sample data.
           </p>
         </div>
 
