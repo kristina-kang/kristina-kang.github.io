@@ -1,276 +1,70 @@
-
 ---
 layout: default
 title: Home
 ---
 
-<!-- HERO SECTION -->
-<section class="hero" id="top">
+<section class="hero">
   <div class="hero-content">
 
-    <!-- LEFT: INTRODUCTION -->
     <div class="hero-text">
+      <h1>Kristina Kang</h1>
+      <p><strong>Data Analyst</strong></p>
 
-      <span class="eyebrow">
-        DATA ANALYTICS &amp; BUSINESS INTELLIGENCE
-      </span>
-
-      <h1>
-        Kristina Kang
-        <span class="hero-heading-accent">Data Analyst.</span>
-      </h1>
-
-      <p class="hero-role">
-        Customer Insights
-        <span class="role-divider">/</span>
-        Product Analytics
+      <p style="margin-top:20px;">
+        I transform raw data into strategic insights that drive measurable business growth. 
+        My work focuses on revenue optimization, customer retention, and product analytics.
       </p>
-
-      <p class="hero-description">
-        Customer insights. Product analytics. Data-driven strategy.
-      </p>
-
-      <div class="hero-actions">
-        <a href="#featured-projects" class="primary-button">
-          Explore Selected Work
-          <span aria-hidden="true">↗</span>
-        </a>
-      </div>
-
-      <div class="hero-meta">
-        <span>SQL</span>
-        <span>Python</span>
-        <span>Tableau</span>
-        <span>Power BI</span>
-        <span>R</span>
-      </div>
-
     </div>
 
-    <!-- RIGHT: PROFILE IMAGE -->
-    <div class="hero-image-wrapper">
-
-      <div class="image-frame">
-        <img
-          src="{{ '/assets/images/profile.png' | relative_url }}"
-          alt="Kristina Kang"
-        >
-      </div>
-
-      <span class="image-caption">
-        DATA ANALYST PORTFOLIO
-      </span>
-
+    <div class="hero-image">
+      <img src="{{ '/assets/images/profile.png' | relative_url }}" alt="Kristina Kang">
     </div>
 
   </div>
-
-  <div class="hero-bottom-label">
-    <span>KRISTINA KANG</span>
-    <span>PORTFOLIO · 2026</span>
-  </div>
-
 </section>
 
+<div class="container">
 
-<!-- FEATURED PROJECTS -->
-<section
-  class="container projects-section"
-  id="featured-projects"
->
+<h2>Selected Work</h2>
 
-  <div class="section-heading">
+<div class="projects-grid">
 
-    <div>
-      <span class="eyebrow">SELECTED WORK</span>
-      <h2>Featured Projects</h2>
-    </div>
-
-    <p class="section-description">
-      A collection of analytical projects exploring
-      customer behavior, product usage, and statistical research.
-    </p>
-
+<a href="/projects/project1">
+  <div class="card">
+    <h3>Cyclistic Bike Share Analysis</h3>
+    <p>Analyzed rider behavior differences between casual riders and annual members using SQL and Tableau.</p>
+    <p class="impact">Impact: Identified usage patterns and provided strategies to increase membership conversion.</p>
   </div>
+</a>
 
-
-  <div class="projects-grid">
-
-    <!-- PROJECT 01 -->
-    <a
-      href="{{ '/projects/project1/' | relative_url }}"
-      class="project-link"
-    >
-
-      <article class="card">
-
-        <div class="card-top">
-          <span class="project-number">01</span>
-          <span class="project-category">CUSTOMER ANALYTICS</span>
-        </div>
-
-        <h3>Cyclistic Bike Share Analysis</h3>
-
-        <p>
-          Examined differences in riding patterns between
-          annual members and casual riders using SQL and Tableau,
-          with a focus on ride duration, frequency, and seasonal trends.
-        </p>
-
-        <div class="impact">
-          <span>KEY TAKEAWAY</span>
-
-          <p>
-            Identified distinct customer behavior patterns
-            and developed recommendations to support
-            membership conversion.
-          </p>
-        </div>
-
-        <div class="card-footer">
-          <span>SQL · TABLEAU</span>
-          <span class="card-arrow">↗</span>
-        </div>
-
-      </article>
-
-    </a>
-
-
-    <!-- PROJECT 02 -->
-    <a
-      href="{{ '/projects/project2/' | relative_url }}"
-      class="project-link"
-    >
-
-      <article class="card">
-
-        <div class="card-top">
-          <span class="project-number">02</span>
-          <span class="project-category">PRODUCT ANALYTICS</span>
-        </div>
-
-        <h3>Bellabeat Smart Device Usage Analysis</h3>
-
-        <p>
-          Explored Fitbit activity and wellness data using
-          SQL and Tableau to examine daily activity,
-          exercise intensity, and user engagement patterns.
-        </p>
-
-        <div class="impact">
-          <span>KEY TAKEAWAY</span>
-
-          <p>
-            Identified behavioral patterns with implications
-            for personalized wellness experiences,
-            product engagement, and marketing strategy.
-          </p>
-        </div>
-
-        <div class="card-footer">
-          <span>SQL · TABLEAU</span>
-          <span class="card-arrow">↗</span>
-        </div>
-
-      </article>
-
-    </a>
-
-
-    <!-- PROJECT 03 -->
-    <a
-      href="{{ '/projects/project3/' | relative_url }}"
-      class="project-link"
-    >
-
-      <article class="card">
-
-        <div class="card-top">
-          <span class="project-number">03</span>
-          <span class="project-category">STATISTICAL ANALYSIS</span>
-        </div>
-
-        <h3>Statistical Inference &amp; Behavioral Data Analysis</h3>
-
-        <p>
-          Applied statistical inference in R to examine
-          student motivation and behavioral characteristics
-          using survey-based data.
-        </p>
-
-        <div class="impact">
-          <span>KEY TAKEAWAY</span>
-
-          <p>
-            Applied confidence intervals and hypothesis testing
-            to evaluate research questions and draw
-            evidence-based conclusions.
-          </p>
-        </div>
-
-        <div class="card-footer">
-          <span>R · STATISTICS</span>
-          <span class="card-arrow">↗</span>
-        </div>
-
-      </article>
-
-    </a>
-
+<a href="/projects/project2">
+  <div class="card">
+    <h3>Smart Fitness Tracker Usage Analysis</h3>
+    <p>Analyzed smart device usage patterns using SQL and Tableau to uncover consumer activity trends.</p>
+    <p class="impact">Impact: Identified user behavior insights to support product and marketing strategy.</p>
   </div>
+</a>
 
-</section>
-
-
-<!-- TECHNICAL SKILLS -->
-<section class="skills-section">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <div>
-        <span class="eyebrow">TOOLS &amp; TECHNOLOGIES</span>
-        <h2>Technical Skills</h2>
-      </div>
-
-      <p class="section-description">
-        Analytical tools and technologies across
-        data analysis, visualization, and statistical research.
-      </p>
-
-    </div>
-
-    <div class="skills">
-
-      <span class="skill-pill">SQL</span>
-      <span class="skill-pill">Python</span>
-      <span class="skill-pill">Tableau</span>
-      <span class="skill-pill">Power BI</span>
-      <span class="skill-pill">R</span>
-
-    </div>
-
+<a href="/projects/project3">
+  <div class="card">
+    <h3>Statistical Inference in R</h3>
+    <p>Applied confidence intervals and hypothesis testing to analyze behavioral survey data.</p>
+    <p class="impact">Impact: Used statistical inference to draw population-level conclusions from sample data.</p>
   </div>
+</a>
 
-</section>
+</div>
 
+<div class="section-divider"></div>
 
-<!-- FOOTER -->
-<footer class="site-footer">
+<h2>Technical Skills</h2>
 
-  <div class="container footer-content">
+<div class="skills">
+  <span class="skill-pill">SQL</span>
+  <span class="skill-pill">Python</span>
+  <span class="skill-pill">Tableau</span>
+  <span class="skill-pill">Power BI</span>
+  <span class="skill-pill">R</span>
+</div>
 
-    <div>
-      <h3>Kristina Kang</h3>
-      <p>Data Analyst Portfolio</p>
-    </div>
-
-    <a href="#top" class="back-to-top">
-      Back to top ↑
-    </a>
-
-  </div>
-
-</footer>
+</div>
