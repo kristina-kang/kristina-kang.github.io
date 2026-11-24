@@ -1,50 +1,117 @@
+<nav style="
+  background-color:#ffffff;
+  padding:16px 24px;
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  font-size:15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+">
 
-<nav class="site-nav" aria-label="Main navigation">
+  <!-- Left: Name -->
+  <div>
+    <a href="/" style="
+      text-decoration:none;
+      color:#111827;
+      font-weight:600;
+      font-size:18px;
+      letter-spacing:0.3px;
+    ">
+      Kristina Kang
+    </a>
+  </div>
 
-  <div class="nav-inner">
+  <!-- Right: Navigation -->
+  <div style="display:flex; gap:32px; align-items:center;">
 
-    <!-- BRAND -->
-    <a class="site-brand" href="{{ '/' | relative_url }}">
-      Kristina Kang<span class="brand-period">.</span>
+    <a href="/" style="text-decoration:none; color:#374151; font-weight:500;">
+      Home
     </a>
 
-    <!-- NAVIGATION -->
-    <div class="nav-links">
+    <!-- Projects Dropdown -->
+    <div style="position:relative;" class="dropdown-wrapper">
+      <span style="
+        cursor:pointer;
+        color:#374151;
+        font-weight:500;
+        display:flex;
+        align-items:center;
+        gap:6px;
+      ">
+        Projects
+        <span style="
+          font-size:16px;
+          line-height:1;
+          color:#6b7280;
+        ">
+          ▾
+        </span>
+      </span>
 
-      <a href="{{ '/' | relative_url }}" class="nav-link">
-        Home
-      </a>
+      <div style="
+        display:none;
+        position:absolute;
+        top:120%;
+        right:0;
+        background:#ffffff;
+        border:1px solid #e5e7eb;
+        border-radius:10px;
+        min-width:240px;
+        box-shadow:0 12px 30px rgba(0,0,0,0.08);
+        padding:8px 0;
+      " class="dropdown-menu">
 
-      <details class="nav-dropdown">
+        <a href="/projects/project1" style="display:block; padding:10px 20px; color:#374151; text-decoration:none;">
+          Cyclistic Bike Share Analysis
+        </a>
 
-        <summary class="nav-link">
-          Projects
-          <span class="dropdown-arrow">⌄</span>
-        </summary>
+        <a href="/projects/project2" style="display:block; padding:10px 20px; color:#374151; text-decoration:none;">
+          Smart Fitness Tracker Usage Analysis
+        </a>
 
-        <div class="dropdown-menu">
+        <a href="/projects/project3" style="display:block; padding:10px 20px; color:#374151; text-decoration:none;">
+          Statistical Inference in R
+        </a>
 
-          <a href="{{ '/projects/project1/' | relative_url }}">
-            <span class="dropdown-number">01</span>
-            Cyclistic Bike Share Analysis
-          </a>
-
-          <a href="{{ '/projects/project2/' | relative_url }}">
-            <span class="dropdown-number">02</span>
-            Smart Fitness Tracker Analysis
-          </a>
-
-          <a href="{{ '/projects/project3/' | relative_url }}">
-            <span class="dropdown-number">03</span>
-            Statistical Inference in R
-          </a>
-
-        </div>
-
-      </details>
-
+      </div>
     </div>
-
   </div>
 
 </nav>
+
+<script>
+  const wrapper = document.querySelector('.dropdown-wrapper');
+  const menu = wrapper.querySelector('.dropdown-menu');
+
+  let timeout;
+
+  wrapper.addEventListener('mouseenter', () => {
+    clearTimeout(timeout);
+    menu.style.display = 'block';
+  });
+
+  wrapper.addEventListener('mouseleave', () => {
+    timeout = setTimeout(() => {
+      menu.style.display = 'none';
+    }, 180); // delay prevents flicker
+  });
+
+  wrapper.addEventListener('click', (e) => {
+    e.stopPropagation();
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  });
+
+  document.addEventListener('click', () => {
+    menu.style.display = 'none';
+  });
+
+  const links = menu.querySelectorAll('a');
+  links.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+      link.style.backgroundColor = '#f3f4f6';
+    });
+    link.addEventListener('mouseleave', () => {
+      link.style.backgroundColor = 'transparent';
+    });
+  });
+</script>
